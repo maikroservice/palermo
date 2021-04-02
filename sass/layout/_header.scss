@@ -1,0 +1,58 @@
+.header {
+  position: relative;
+  height: 75vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-tertiary, 0.8),
+      rgba($color-secondary, 0.75)
+    ),
+    url("../assets/images/ningyu-he-6LMGxmEatnk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+
+  &__logo-wrapper {
+    position: absolute;
+    top: 1rem;
+    left: 7.5rem;
+  }
+
+  &__logo {
+    height: 8rem;
+  }
+
+  &__hero-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-96.5%, -50%);
+  }
+
+  &__hero-text {
+    color: $color-white;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    /*
+          fix to small hickup upwards animation
+          */
+    backface-visibility: hidden;
+
+    &--primary {
+      display: block;
+      font-size: 5rem;
+      font-weight: 700;
+      line-height: 100%;
+      animation-name: fromTheLeft;
+      animation-duration: 0.6s;
+      animation-timing-function: ease-out;
+    }
+
+    &--secondary {
+      display: block;
+      font-size: 3rem;
+      animation-name: fromTheBottom;
+      animation-duration: 0.4s;
+      animation-timing-function: ease-out;
+    }
+  }
+}
