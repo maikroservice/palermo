@@ -3,14 +3,6 @@
   height: 95vh;
   width: 95vw;
 }
-
-.left {
-  position: absolute;
-  left: 0;
-  width: 60vw;
-  height: 100vh;
-  background-image: linear-gradient(to right, #202020, #808080);
-}
 .right {
   position: absolute;
   right: 0;
@@ -19,12 +11,8 @@
   overflow: hidden;
 }
 .right .strip-top {
-  width: calc(50vw + 90px);
+  width: calc(50vw + 10.4rem);
   transform: skewX(20deg) translateX(160px);
-}
-.right .strip-bottom {
-  width: calc(50vw + 40px);
-  transform: skewX(-15deg) translateX(90px);
 }
 .center {
   position: absolute;

@@ -1,6 +1,7 @@
 .header {
   position: relative;
-  height: 75vh;
+  box-sizing: inherit;
+  height: 96vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-tertiary, 0.8),
@@ -9,7 +10,9 @@
     url("../assets/images/ningyu-he-6LMGxmEatnk-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+  clip-path: polygon(5% 0, 99.9% 0, 94% 100%, 0 100%);
+  margin-bottom: 1.5rem;
+  background-color: $color-white;
 
   &__logo-wrapper {
     position: absolute;
