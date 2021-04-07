@@ -1,0 +1,87 @@
+.footer {
+  margin-top: 6rem;
+  padding: 3rem 0;
+  //height: 30vh;
+  background-color: #212121;
+
+  &__logo-wrapper {
+    display: flex;
+  }
+  &__logo {
+    margin: 1rem 0rem 0rem 1rem;
+    height: 6rem;
+
+    &-text {
+      margin-top: 2rem;
+      font-size: 3rem;
+      color: $color-white;
+    }
+  }
+
+  &__apps {
+    display: flex;
+    margin: 1rem;
+  }
+
+  &__ios {
+    padding: 0.5rem;
+  }
+
+  &__android {
+    padding: 0.5rem;
+  }
+
+  &__navigation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    &-list {
+      list-style: none;
+    }
+
+    &-item {
+      margin: 2rem;
+    }
+
+    &-link {
+      color: $color-white;
+      padding: 1rem 3rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+
+      &:hover,
+      &:active {
+        color: $color-primary;
+      }
+    }
+  }
+  .main {
+    &:link,
+    &:visited {
+      font-weight: 900;
+      font-size: 1.9;
+      border-bottom: 1px dotted $color-primary;
+    }
+  }
+  &__love {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: $color-white;
+
+    &-link {
+      &:link,
+      &:visited {
+        color: $color-white;
+        text-decoration: none;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color-primary;
+      }
+    }
+  }
+}
