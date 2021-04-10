@@ -56,12 +56,16 @@
       }
     }
   }
-  .main {
+  .footer__link-main {
     &:link,
     &:visited {
       font-weight: 900;
       font-size: 1.9;
       border-bottom: 1px dotted $color-primary;
+    }
+    &:hover,
+    &:active {
+      color: $color-primary-light;
     }
   }
   &__love {

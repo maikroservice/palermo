@@ -1,0 +1,16 @@
+.device__asset {
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+}
+
+.device {
+  background-color: $color-almost-black;
+  position: relative;
+  border: 12px solid $color-almost-black;
+  border-radius: 20px;
+  box-shadow: 0 80px 150px 0 rgba($color-black, 0.5);
+  overflow: auto;
+  width: 100%;
+  display: block;
+}

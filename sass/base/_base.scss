@@ -18,4 +18,8 @@ body {
 
 html {
   font-size: 62.5%;
+
+  @include responsive-mixin(phone) {
+    font-size: 55%;
+  }
 }
