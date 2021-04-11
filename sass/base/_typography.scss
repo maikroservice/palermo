@@ -1,0 +1,17 @@
+.text {
+  &__heading-section {
+    font-weight: 900;
+
+    &--standard {
+      text-transform: uppercase;
+      color: $color-primary-light;
+    }
+  }
+
+  &__highlight {
+    &--primary {
+      font-weight: 700;
+      color: $color-secondary;
+    }
+  }
+}

@@ -53,6 +53,16 @@ html {
     html {
       font-size: 55%; } }
 
+.text__heading-section {
+  font-weight: 900; }
+  .text__heading-section--standard {
+    text-transform: uppercase;
+    color: #b03fba; }
+
+.text__highlight--primary {
+  font-weight: 700;
+  color: #3f6eba; }
+
 .btn:link, .btn:visited {
   display: inline-block;
   text-transform: uppercase;
@@ -325,21 +335,23 @@ html {
 .testimonials {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-column-gap: 100px; }
-
-.testimonials__device {
-  grid-column: 1;
-  grid-row: 1;
-  display: flex;
-  justify-content: space-between; }
-
-.testimonials__heading {
-  grid-column: 2;
-  grid-row: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  .testimonials__device {
+    grid-column: 1;
+    grid-row: 1; }
+  .testimonials__heading {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media (max-width: 37.5em) {
+      .testimonials__heading {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        grid-column: 1;
+        grid-row: 2; } }
 
 .header {
   position: relative;
