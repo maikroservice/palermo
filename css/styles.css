@@ -321,6 +321,9 @@ html {
   border-radius: 10px;
   display: block;
   width: 100%; }
+  @media (max-width: 37.5em) {
+    .device__asset {
+      border-radius: 5px; } }
 
 .device {
   background-color: #121212;
@@ -331,12 +334,19 @@ html {
   overflow: auto;
   width: 100%;
   display: block; }
+  @media (max-width: 37.5em) {
+    .device {
+      border: 5px solid #121212;
+      border-radius: 5px; } }
 
 .testimonials {
   margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
   grid-column-gap: 100px; }
+  @media (max-width: 37.5em) {
+    .testimonials {
+      grid-template-columns: repeat(315px); } }
   .testimonials__device {
     grid-column: 1;
     grid-row: 1; }

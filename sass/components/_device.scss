@@ -2,6 +2,10 @@
   border-radius: 10px;
   display: block;
   width: 100%;
+
+  @include responsive-mixin(phone) {
+    border-radius: 5px;
+  }
 }
 
 .device {
@@ -13,4 +17,9 @@
   overflow: auto;
   width: 100%;
   display: block;
+
+  @include responsive-mixin(phone) {
+    border: 5px solid $color-almost-black;
+    border-radius: 5px;
+  }
 }
